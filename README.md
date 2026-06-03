@@ -20,14 +20,4 @@ Uma aplicação desktop simples e intuitiva desenvolvida em Python utilizando **
 * **Interface Gráfica (GUI):** PyQt5 (carregamento dinâmico via ficheiro `.xml`/`.ui`)
 * **Base de Dados:** MySQL
 * **Conector:** `mysql-connector-python`
-
----
-
-## 📋 Pré-requisitos & Instalação
-
-Antes de começares, vais precisar de ter instalado na tua máquina o Python e um servidor MySQL (como o XAMPP, WampServer ou Docker).
-
-### 1. Clonar o Repositório
-```bash
-git clone [https://github.com/o-teu-utilizador/nome-do-repositorio.git](https://github.com/o-teu-utilizador/nome-do-repositorio.git)
-cd nome-do-repositorio
+* 
