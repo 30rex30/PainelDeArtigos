@@ -98,7 +98,7 @@ def fechar_programa():
     app.quit()
 
 # ==========================================
-# 3. INICIALIZAÇÃO DA APLICAÇÃO E TIMERS
+# INICIALIZAÇÃO DA APLICAÇÃO E TIMER
 # ==========================================
 app = QtWidgets.QApplication(sys.argv)
 app.aboutToQuit.connect(fechar_programa)
@@ -118,6 +118,9 @@ janela.btn_repor.clicked.connect(lambda: alterar_stock(1))
 # Variável de controlo para a animação da barra
 contador = 0
 
+# ==========================================
+#  TELA DE CARREGAMENT0
+# ==========================================
 def animar_carregamento():
     global contador
     contador += 5  # Avança a barra de 5 em 5%
@@ -133,7 +136,7 @@ def animar_carregamento():
         tela_splash.close()
         janela.show()
 
-# Cria o temporizador para correr a animação a cada 100 milissegundos
+#  TIMER PARA A TELA DE CARREGAMENTO
 timer = QTimer()
 timer.timeout.connect(animar_carregamento)
 timer.start(100) 
