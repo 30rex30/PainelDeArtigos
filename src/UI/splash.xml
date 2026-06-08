@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SplashWindow</class>
+ <widget class="QDialog" name="SplashWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>400</width><height>300</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>A carregar...</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog { background-color: #2c3e5000; border-radius: 10px; }</string>
+  </property>
+  <widget class="QLabel" name="lbl_foto">
+   <property name="geometry"><rect><x>50</x><y>20</y><width>300</width><height>200</height></rect></property>
+   <property name="text"><string/></property>
+   <property name="alignment"><set>Qt::AlignCenter</set></property>
+  </widget>
+  <widget class="QLabel" name="lbl_loading">
+   <property name="geometry"><rect><x>20</x><y>240</y><width>360</width><height>30</height></rect></property>
+   <property name="font"><font><pointsize>12</pointsize><bold>true</bold></font></property>
+   <property name="styleSheet"><string notr="true">color: white;</string></property>
+   <property name="text"><string>A CARREGAR O SISTEMA...</string></property>
+   <property name="alignment"><set>Qt::AlignCenter</set></property>
+  </widget>
+ </widget>
+</ui>

@@ -93,7 +93,7 @@ def fechar_programa():
 app = QtWidgets.QApplication(sys.argv)
 app.aboutToQuit.connect(fechar_programa)
 
-janela = uic.loadUi("UI/dashboard.xml")
+janela = uic.loadUi("scr/UI/dashboard.xml")
 
 janela.btn_adicionar.clicked.connect(adicionar_produto)
 janela.btn_vender.clicked.connect(lambda: alterar_stock(-1)) # Retira 1 un.

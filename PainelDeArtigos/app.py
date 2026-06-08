@@ -104,13 +104,13 @@ app = QtWidgets.QApplication(sys.argv)
 app.aboutToQuit.connect(fechar_programa)
 
 # Carrega a tela de carregamento (Splash)
-tela_splash = uic.loadUi("UI/splash.xml")
+tela_splash = uic.loadUi("scr/UI/splash.xml")
 # Remove as bordas da janela para parecer um splash profissional
 tela_splash.setWindowFlags(Qt.Window | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
 tela_splash.show()
 
 # Carrega a janela principal (mas mantém-na oculta por enquanto)
-janela = uic.loadUi("UI/dashboard.xml")
+janela = uic.loadUi("scr/UI/dashboard.xml")
 janela.btn_adicionar.clicked.connect(adicionar_produto)
 janela.btn_vender.clicked.connect(lambda: alterar_stock(-1))
 janela.btn_repor.clicked.connect(lambda: alterar_stock(1))
